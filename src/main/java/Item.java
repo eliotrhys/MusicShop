@@ -1,16 +1,11 @@
-public abstract class Instrument implements IPlay, ISell{
+public abstract class Item implements ISell {
 
-    String brand;
-    String model;
+    String item;
     double buyPrice;
     double sellPrice;
 
-    public String getBrand() {
-        return brand;
-    }
-
-    public String getModel() {
-        return model;
+    public String getItem() {
+        return item;
     }
 
     public double getBuyPrice() {
@@ -32,4 +27,5 @@ public abstract class Instrument implements IPlay, ISell{
         double markup = (sellPrice - buyPrice);
         return markup;
     }
+
 }
