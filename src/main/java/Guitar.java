@@ -1,4 +1,4 @@
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay{
 
     String material;
 
@@ -13,4 +13,9 @@ public class Guitar extends Instrument {
     public String getMaterial() {
         return material;
     }
+
+    public String play(){
+        return "Strrummm";
+    }
+
 }

@@ -21,4 +21,9 @@ public class GuitarTest {
         assertEquals("Wood", testGuitar.getMaterial());
     }
 
+    @Test
+    public void canPlayGuitar(){
+        assertEquals(testGuitar.play(), "Strrummm");
+    }
+
 }
